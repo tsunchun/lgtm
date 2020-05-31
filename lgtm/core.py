@@ -1,5 +1,6 @@
 import click
 
+
 @click.command()
 def cli():
     """LGTM画像生成ツール"""
