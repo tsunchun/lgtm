@@ -6,12 +6,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: deps--{{ checksum "requirements.lock" }}
+          key: deps-{{ checksum "requirements.lock" }}
       - run:
           command: |
             pip install --user -r requirements.lock
       - save_cache:
-          key: deps--{{ checksum "requirements.lock" }}
+          key: deps-{{ checksum "requirements.lock" }}
           paths:
             - "~/.local"
 test:
@@ -20,10 +20,10 @@ test:
   steps:
     - checkout
     - restore_cache:
-        key: deps--{{ checksum "requirements.lock" }}
+        key: deps-{{ checksum "requirements.lock" }}
     - run:
         command: |
-          python -m unittest -v
+          python3 -m unittest -v
 workflows:
   version: 2
   all:
