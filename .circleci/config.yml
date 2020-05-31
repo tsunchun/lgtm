@@ -5,7 +5,7 @@ jobs:
       - image: circleci/python:3.8.1
     steps:
       - checkout
-      - restoe_cashe:
+      - restore_cashe:
           key: deps--{{ checksum "requirements.lock" }}
       - run:
           command: |
