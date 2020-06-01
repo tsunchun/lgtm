@@ -8,7 +8,7 @@ FONT_MAX_SIZE = 256
 FONT_MIN_SIZE = 24
 
 # フォントの格納先のパスは実行環境に合わせて変更する
-FONT_NAME = 'C:/Windows/Fonts/arialbd.ttf'
+FONT_NAME = '‪C:/Windows/Fonts/ALGER.TTF'
 FONT_COLOR_WHITE = (255, 255, 255)
 
 # アウトプット関連の定数
