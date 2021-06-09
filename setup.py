@@ -6,7 +6,7 @@ setup(
     packages=find_packages(exclude=('test',)),
     install_requires=[
         'Click~=7.0',
-        'Pillow~=6.2.0',
+        'Pillow~=8.2.0',
         'requests~=2.22.0',
     ],
     entry_points={
